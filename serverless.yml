@@ -1,7 +1,6 @@
-### CHANGE ME ###  
-## org: armynante
-## app: baedek 
-## service: scrape-service
+org: armynante
+app: baedek 
+service: scrape-service
 frameworkVersion: '3'
 
 provider:

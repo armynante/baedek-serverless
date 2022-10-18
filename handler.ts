@@ -1,6 +1,6 @@
 import serverless from "serverless-http";
 import express from "express";
-import scrape from "./scrape";
+import scrape from "./lib/infatuation/hitlist";
 const app = express();
 
 app.get("/", async (req, res, next) => {
