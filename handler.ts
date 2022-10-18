@@ -4,15 +4,13 @@ import scrape from "./lib/infatuation/hitlist";
 const app = express();
 
 app.get("/", async (req, res, next) => {
-  const url = await scrape((err, result) => {
+  const  hitlist = await scrape((err, result) => {
     if (err) {
       return next(err);
     }
     return result;
   });
-  return res.status(200).json({
-    message: url,
-  });
+  return res.status(200).json( hitlist );
 });
 
 // app.get("/hello", (req, res, next) => {
